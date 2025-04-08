@@ -1,27 +1,52 @@
-/* Base body styling */
-body { 
-    font-family: sans-serif;
-    background-color: lightskyblue;
-    background-image: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg");
+/* styles.css */
+
+body {
+    background-image: url("\bg.jpg"); /* 👈 your local image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px;
+    height: 100vh;
 }
 
-/* Header styling */
+
+/* Center the Weather App title */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button:hover {
+    background: lavender;
+}
+
 h5 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     text-decoration: solid;
 }
 
-/* Input field styling */
+.search-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+}
+
 input[type="text"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid #007BFF;
+    border: 2px solid #0099ff;
     border-radius: 5px;
     font-size: 16px;
     outline: none;
@@ -34,34 +59,4 @@ input[type="text"]::placeholder {
 
 input[type="text"]:focus {
     border-color: #0056b3;
-}
-
-/* Button styling */
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: lavender;
-}
-
-/* Flex container for search */
-.search-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* Main content container */
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
 }

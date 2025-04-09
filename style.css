@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-    background-image: url("\bg.jpg"); /* 👈 your local image path */
+    background-image: url("bg.jpg"); /* 👈 your local image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

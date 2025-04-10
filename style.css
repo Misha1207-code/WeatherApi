@@ -1,12 +1,11 @@
 body {
     background-image: url("bg.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    animation: fadeInBody 2s ease-in;
+    animation: fadeInBody 1s ease-in;
     font-family: 'Comic Neue', sans-serif;
 }
 
@@ -21,34 +20,15 @@ body {
     }
 }
 
-.cloud {
-    position: absolute;
-    top: 100px;
-    left: -300px;
-    width: 200px;
-    height: auto;
-    opacity: 0.6;
-    animation: moveCloud 60s linear infinite;
-    z-index: 0;
-}
-
-@keyframes moveCloud {
-    0% {
-        left: -300px;
-    }
-    100% {
-        left: 100%;
-    }
-}
 
 .card {
     position: relative;
-    z-index: 1;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     animation: fadeInCard 1.5s ease-in;
     font-family: 'Comic Neue', sans-serif;
 }
+
 
 @keyframes fadeInCard {
     0% {
@@ -61,7 +41,7 @@ body {
     }
 }
 
-/* ✅ Font changed to Montserrat */
+
 .title-font {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
@@ -102,8 +82,4 @@ input[type="text"]::placeholder {
 
 input[type="text"]:focus {
     border-color: #0056b3;
-}
-
-.gap-2 {
-    gap: 10px;
 }
